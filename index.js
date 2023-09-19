@@ -39,11 +39,44 @@ btn.addEventListener("click", function (event) {
 		else months = 11;		
 	}
 
+	let i = 0;
+	let j = 0;
+	let k = 0;
 
-	daysElem.innerHTML = days;
-	monthsElem.innerHTML = months;
-	yearsElem.innerHTML = years;
-	
+
+	function updateDays() {
+		if (i < days) {
+			setTimeout(updateDays, 10);
+		}
+
+	    daysElem.innerHTML = i;	
+		i += 1;
+
+	}
+
+
+	function updateMonths() {
+		if (j < months) {
+			setTimeout(updateMonths, 10);
+		}
+
+		monthsElem.innerHTML = j;
+		j += 1;
+	}
+
+	function updateYears() {
+		if (k < years) {
+			setTimeout(updateYears, 10);
+		}
+
+		yearsElem.innerHTML = k;
+		k += 1;
+		
+	}
+
+	updateYears();
+	updateMonths();
+	updateDays();	
 });
 
 
