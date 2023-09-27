@@ -2,24 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-/* 
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-} */
 
 body {
 	margin: 0;
-}
+} 
+
 
 
 #outer_div {	
 	background-color: hsl(0, 0%, 86%);
 	padding: 30px 0;
-	
+	height: 91.5vh;	
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -159,12 +155,12 @@ hr {
 		margin: 0 auto;
 	} */
 
-	/* #inner_div {
-		width: 80%;
-		height: 90%;
+	 #inner_div {
+		/*width: 80%;
+		height: 90%;*/
 		border-radius: 10px;
 		border-bottom-right-radius: 100px;
-	} */
+	} 
 
 	label {
 		font-size: 20px;
