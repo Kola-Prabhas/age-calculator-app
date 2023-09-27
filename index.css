@@ -2,66 +2,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-
+/* 
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+} */
+
+body {
+	margin: 0;
 }
 
 
-#outer_div {
-	width: 90vw;
-	height: 800px;
+#outer_div {	
 	background-color: hsl(0, 0%, 86%);
-	box-shadow: -2px 2px 15px rgb(25, 200, 100);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 30px 0;
+	
 }
 
 
 #inner_div {
 	position: relative;
-	width: 60%;
-	height: 720px;
+	width: 50%;
+	min-width: 393px;
+	margin: 0 auto;
+	padding: 10px 0;
+	/* height: 720px; */
 	background-color: white;
 	border-radius: 20px;
 	border-bottom-right-radius: 200px;
+	box-shadow: -2px 2px 15px rgb(25, 200, 100);
 }
 
 
 form {
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
+	width: 80%;
+	padding: 2% 0 0 2%;
+	margin: 0 auto;
+	/* border: 1px solid black; */
 }
 
 
 label {
 	display: inline-block;
-	font-size: 25px;
-	margin: 50px 0 0 70px;
-	font-family: Roboto;
+	padding-bottom: 10px;
+	font-size: 15px;
+	margin-right: 5%;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 
 input {
 	display: block;
-	width: 130px;
+	width: 50%;
+	min-width: 75px;
 	height: 30px;
-	margin: 10px 0 0 0;
-	padding: 10px;
-	font-size: 30px;
+	margin-top: 10px;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: Roboto;
-	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;	
 }
 
 
 input:focus {
-	border: 3px solid blue;
+	border: 1px solid rgb(48, 41, 135);
 }
 
 
@@ -79,12 +92,13 @@ input[type="number"]::-webkit-outer-spin-button {
 	position: absolute;
 	font-size: 15px;
 	color: red;
+	letter-spacing: normal;
 }
 
 
 hr {
-	margin-top: 75px;
-	width: 85%;
+	margin-top: 30px;
+	width: 80%;
 	color: dodgerblue;
 }
 
@@ -98,7 +112,7 @@ hr {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 180px;
+	top: 95px;
 	right: 50px;
 	cursor: pointer;
 }
@@ -118,7 +132,7 @@ hr {
 
 
 #years, #months, #days {
-	font-size: 90px;
+	font-size: 60px;
 	font-weight: bold;
 	font-family: 'Poppins';
 	letter-spacing: -3px;
@@ -130,7 +144,7 @@ hr {
 	display: inline-block;
 	color: blue;
 	margin-left: 70px;
-	font-size: 100px;
+	font-size: 75px;
 	font-weight: bold;
 } 
 
@@ -138,19 +152,19 @@ hr {
 /* RESPONSIVE QUERIES */
 
 
-@media (max-width: 375px) {
-	#outer_div {
+ @media (max-width: 400px) {
+	/* #outer_div {
 		width: 100%;
 		height: 100%;
 		margin: 0 auto;
-	}
+	} */
 
-	#inner_div {
+	/* #inner_div {
 		width: 80%;
 		height: 90%;
 		border-radius: 10px;
 		border-bottom-right-radius: 100px;
-	}
+	} */
 
 	label {
 		font-size: 20px;
@@ -159,11 +173,10 @@ hr {
 	}
 
 	input {
-		display: block;
-		width: 45px;
+		/* width: 45px;
 		height: 15px;
 		margin: 10px 0 0 0;
-		padding: 10px;
+		padding: 10px; */
 		font-size: 15px;
 	}
 
@@ -178,7 +191,7 @@ hr {
 		height: 50px;
 		border-radius: 50%;
 		position: absolute;
-		top: 29%;
+		top: 26%;
 		left: 40%;
 	}
 
@@ -201,7 +214,7 @@ hr {
 		margin-left: 30px;
 		font-size: 60px;
 	}
-}
+} 
 
 
 
